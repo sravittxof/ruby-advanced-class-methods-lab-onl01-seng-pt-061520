@@ -50,20 +50,10 @@ class Song
     end
   end
   
-=begin
-    sorted_alphabetically = []
-    self.all.each do |song|
-      sorted_alphabetically << "#{song.name}"
-    end
-    sorted_alphabetically.sort!    
-    sorted_alphabetically
-=end
-  
-  
   def self.alphabetical
     self.all.sort_by(song.name)
-
   end
+  
   
   
 end
