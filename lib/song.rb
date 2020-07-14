@@ -55,7 +55,8 @@ class Song
   end
   
   def self.new_from_file(file_name)
-    song = 
+    song = self.new
+    
   end
   
 end
