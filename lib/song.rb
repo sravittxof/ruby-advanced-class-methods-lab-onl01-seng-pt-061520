@@ -59,6 +59,7 @@ class Song
     song.artist_name = file_name.scan(/(\w+) -/)
     song.name = file_name.scan(/-(\w+).mp3/)
     song.save
+    song
   end
   
 end
