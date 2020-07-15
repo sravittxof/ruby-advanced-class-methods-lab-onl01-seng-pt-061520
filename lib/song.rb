@@ -56,6 +56,7 @@ class Song
   
   def self.new_from_filename(file_name)
     song = self.new
+    
     song.artist_name = file_name.scan(/(\w+) -/)[0]
     song.name = file_name.scan(/-(\w+).mp3/)[0]
     song.save
