@@ -57,8 +57,8 @@ class Song
   def self.new_from_filename(file_name)
     song = self.new
     names_array = file_name.split(" - ")
-    song.artist_name = file_name.scan(/(\w+) -/)
-    song.name = names_array[0].scan(/(\w+).mp3/)
+    song.artist_name = names_array[0]
+    song.name = names_array[1].scan(/(\w+).mp3/).join
     song.save
     song
   end
