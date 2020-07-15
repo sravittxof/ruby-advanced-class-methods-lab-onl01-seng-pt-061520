@@ -54,7 +54,7 @@ class Song
     self.all.sort_by { |song| song.name }
   end
   
-  def self.new_from_file(file_name)
+  def self.new_from_filename(file_name)
     song = self.new
     song.artist_name = file_name.scan(/(\w+) -/)
     song.name = file_name.scan(/-(\w+).mp3/)
